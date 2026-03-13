@@ -1,0 +1,136 @@
+# ============================================================
+# DoctorCancúnAgentNanoBot — Business Rules
+# ============================================================
+# ⚠️ PRICES ARE BENCHMARK ESTIMATES FROM MARKET RESEARCH
+# ⚠️ REPLACE WITH REAL PRICES FROM OWNER QUESTIONNAIRE
+
+business:
+  name: "iDoctor Cancún"
+  slogan: "iDoctor... ¡recupera tu vida!"
+  phone: "998 213 4708"
+  agent_phone: ""  # TODO: Set when defined
+  address: "C. 71 Supermanzana 91, Manzana 88, Lote 17, Tumben Cuxtal, 77516 Cancún, Q.R."
+  facebook: "https://www.facebook.com/idoctorcancunn91/"
+  google_maps: "https://maps.app.goo.gl/ze4432vtrbeBLDKn8"
+  experience_years: 10
+  google_rating: 4.9
+  google_reviews: 31
+  diagnosis: "GRATIS"
+  warranty_type: "Por escrito"
+
+  hours:  # TODO: Complete from owner questionnaire
+    monday: "11:00 - ?"
+    tuesday: "11:00 - ?"
+    wednesday: "11:00 - ?"
+    thursday: "11:00 - ?"
+    friday: "11:00 - ?"
+    saturday: "11:00 - ?"
+    sunday: "Cerrado"  # TODO: Confirm
+
+  payment_methods:  # TODO: Confirm from owner
+    - efectivo
+    - tarjeta_debito
+    - tarjeta_credito
+    - transferencia
+
+services:
+  screen_repair:
+    name: "Cambio de pantalla"
+    time_estimate: "30 min - 2 hrs"
+    warranty: "3 meses"
+    prices:  # ⚠️ BENCHMARK — REPLACE WITH REAL PRICES
+      iphone_se:    {min: 600,  max: 900}
+      iphone_6:     {min: 600,  max: 900}
+      iphone_7:     {min: 700,  max: 1000}
+      iphone_8:     {min: 700,  max: 1100}
+      iphone_x:     {min: 1200, max: 1800}
+      iphone_xs:    {min: 1200, max: 1800}
+      iphone_xr:    {min: 1000, max: 1500}
+      iphone_11:    {min: 1200, max: 2000}
+      iphone_12:    {min: 1500, max: 2500}
+      iphone_13:    {min: 1800, max: 3000}
+      iphone_14:    {min: 2500, max: 4000}
+      iphone_15:    {min: 3000, max: 5000}
+      samsung_a14:  {min: 600,  max: 1000}
+      samsung_a15:  {min: 700,  max: 1100}
+      samsung_a34:  {min: 900,  max: 1500}
+      samsung_a54:  {min: 1200, max: 2000}
+      samsung_s23:  {min: 2500, max: 4000}
+      samsung_s24:  {min: 3000, max: 5000}
+      huawei_p30:   {min: 800,  max: 1700}
+      huawei_y9:    {min: 600,  max: 1200}
+      xiaomi_generic: {min: 500, max: 1500}
+      motorola_generic: {min: 600, max: 1500}
+
+  battery_replacement:
+    name: "Cambio de batería"
+    time_estimate: "20-40 min"
+    warranty: "3 meses"
+    prices:
+      iphone_generic: {min: 400, max: 900}
+      samsung_generic: {min: 350, max: 800}
+      huawei_generic:  {min: 350, max: 700}
+      xiaomi_generic:  {min: 300, max: 600}
+
+  charging_port:
+    name: "Reparación de puerto de carga"
+    time_estimate: "30-60 min"
+    warranty: "3 meses"
+    prices:
+      generic: {min: 300, max: 800}
+
+  water_damage:
+    name: "Reparación por daño de agua"
+    time_estimate: "24-48 hrs"
+    warranty: "Sin garantía (resultado variable)"
+    prices:
+      generic: {min: 500, max: 2000}
+
+  unlock:
+    name: "Desbloqueo"
+    time_estimate: "15-60 min"
+    warranty: "Permanente"
+    prices:
+      carrier_unlock: {min: 200, max: 600}
+      frp_google:     {min: 300, max: 800}
+      pattern_pin:    {min: 200, max: 500}
+
+  ipad_generic:
+    name: "Reparación de iPad/Tablet"
+    time_estimate: "1-3 hrs"
+    warranty: "3 meses"
+    prices:
+      screen: {min: 1500, max: 4000}
+
+  laptop_generic:
+    name: "Reparación de Laptop"
+    time_estimate: "1-3 días"
+    warranty: "3 meses"
+    prices:
+      maintenance: {min: 300, max: 500}
+      ssd_upgrade:  {min: 800, max: 2500}
+      format:       {min: 300, max: 600}
+
+lead_states:
+  - NEW
+  - USUARIO_PREGUNTO
+  - LEAD_INTERESADO
+  - LEAD_CITADO
+  - LEAD_URGENTE
+  - GARANTIA_ESCALADO
+  - CLIENTE_RECURRENTE
+  - LEAD_PERDIDO
+
+automations:
+  follow_up_interested:
+    delay_hours: 24
+    template: "follow_up_24h"
+  follow_up_quoted:
+    delay_hours: 48
+    template: "follow_up_48h"
+  appointment_reminder:
+    delay_hours: -2
+    template: "appointment_reminder"
+  post_repair_review:
+    delay_hours: 24
+    template: "post_repair"

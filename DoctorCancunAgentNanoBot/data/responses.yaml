@@ -1,0 +1,80 @@
+# ============================================================
+# DoctorCancúnAgentNanoBot — Response Templates
+# ============================================================
+
+responses:
+  welcome:
+    es: "Bienvenido a iDoctor Cancún. Somos especialistas en reparación de celulares, iPads y laptops con más de 10 años de experiencia. ¿En qué te podemos ayudar?"
+    en: "Welcome to iDoctor Cancún! We specialize in phone, iPad and laptop repair with 10+ years of experience. How can we help you?"
+
+  location:
+    es: "📍 Estamos en C. 71, Supermanzana 91, Manzana 88, Lote 17, Tumben Cuxtal, CP 77516, Cancún.\n\n📱 Tel: 998 213 4708\n📘 Facebook: fb.com/idoctorcancunn91\n\n¿Necesitas la ubicación en Google Maps?"
+    en: "📍 We're at C. 71, Supermanzana 91, Manzana 88, Lote 17, Tumben Cuxtal, 77516 Cancún.\n\n📱 Phone: 998 213 4708\n\nNeed Google Maps directions?"
+
+  hours:
+    es: "🕐 Abrimos a las 11:00 AM.\n(Horario completo pendiente de confirmar — pregunta por WhatsApp para detalles).\n\n¿Te gustaría venir hoy?"
+    en: "🕐 We open at 11:00 AM.\nContact us on WhatsApp for full schedule.\n\nWould you like to visit today?"
+
+  diagnosis_free:
+    es: "¡Claro! Nuestro diagnóstico es totalmente GRATIS y sin compromiso. Tráelo y te decimos exactamente qué tiene y cuánto te sale. ¿Te gustaría pasar? 😉"
+    en: "Of course! Our diagnosis is completely FREE with no obligation. Bring it in and we'll tell you exactly what's wrong and how much it costs."
+
+  warranty_info:
+    es: "Todas nuestras reparaciones incluyen garantía POR ESCRITO. ¡Más de 10 años de experiencia nos respaldan! ¿Qué reparación te interesa?"
+    en: "All our repairs include a WRITTEN warranty. Over 10 years of experience back us up! What repair are you interested in?"
+
+  water_damage_advice:
+    es: "🚨 ¡Ojo! Si tu cel se mojó:\n\n1️⃣ NO lo enciendas\n2️⃣ NO lo conectes a cargar\n3️⃣ NO lo metas en arroz (es un mito)\n4️⃣ Tráelo lo antes posible\n\nEntre más rápido nos lo traigas, más probabilidades de salvarlo. ¿Puedes venir hoy?"
+    en: "🚨 If your phone got wet:\n\n1️⃣ Do NOT turn it on\n2️⃣ Do NOT charge it\n3️⃣ Do NOT put it in rice (myth!)\n4️⃣ Bring it ASAP\n\nThe sooner you bring it, the better the chances. Can you come today?"
+
+  repair_vs_new:
+    es: "Buena pregunta. Si el costo de la reparación es menor al 40-50% del valor de un equipo nuevo, generalmente conviene reparar. Tráelo para diagnóstico gratuito y te damos nuestra recomendación honesta. 💯"
+    en: "Good question. If repair costs less than 40-50% of a new device, it's usually worth fixing. Bring it in for free diagnosis and we'll give you our honest recommendation."
+
+  screen_original_vs_generic:
+    es: "La diferencia:\n\n🔹 Genérica de calidad: Funciona bien, colores ligeramente diferentes, más económica\n🔹 Original: Calidad de fábrica, colores exactos, más cara\n\nTe mostramos ambas opciones para que TÚ decidas. 👍"
+    en: "The difference:\n\n🔹 Quality generic: Works well, slightly different colors, more affordable\n🔹 Original: Factory quality, exact colors, more expensive\n\nWe show you both options so YOU decide."
+
+  payment_methods:
+    es: "Aceptamos:\n💵 Efectivo\n💳 Tarjeta (débito y crédito)\n🏦 Transferencia bancaria\n\n(Confirmar métodos adicionales directamente en tienda)"
+    en: "We accept:\n💵 Cash\n💳 Card (debit & credit)\n🏦 Bank transfer\n\nPlease confirm additional methods at our shop."
+
+  accessories:
+    es: "¡Sí! Tenemos micas/cristales templados, fundas, cargadores, cables y más. Pásate a vernos o pregunta por el modelo que necesitas. 📱"
+    en: "Yes! We have screen protectors, cases, chargers, cables and more. Visit us or ask about your specific model."
+
+  appointment:
+    es: "¡Genial! No necesitas cita formal — puedes pasar directo en nuestro horario de atención. Pero si quieres asegurar tu lugar, mándanos mensaje antes de venir y te apartamos turno. 🗓️\n\n📍 C. 71 SM 91 Mza 88 Lt 17, Tumben Cuxtal"
+    en: "Great! No formal appointment needed — you can walk in during business hours. But if you want to secure your spot, message us before coming."
+
+  domicilio:
+    es: "Por el momento nuestro servicio es directamente en taller. Estamos en Tumben Cuxtal, SM 91. ¡Te esperamos! 🏪"
+    en: "Currently our service is at our shop. We're in Tumben Cuxtal, SM 91. We look forward to seeing you!"
+
+  english_detected:
+    en: "Hello! We speak English too. 🇺🇸🇬🇧 We're a phone, tablet and laptop repair shop in Cancún with 10+ years of experience. Free diagnosis, written warranty! How can I help you?"
+
+  outside_hours:
+    es: "En este momento estamos cerrados. 🕐 Abrimos a las 11:00 AM. ¿Quieres que te aparte turno como primer cliente mañana?"
+    en: "We're currently closed. 🕐 We open at 11:00 AM. Would you like to be our first customer tomorrow?"
+
+  cant_help:
+    es: "Esa reparación no la manejamos actualmente, pero te podemos recomendar a alguien de confianza. ¿Me dices qué equipo es?"
+    en: "We don't currently offer that repair, but we can recommend someone reliable. What device is it?"
+
+  escalate_to_human:
+    es: "Entiendo. Para darte la mejor atención, voy a pasar tu caso directamente con nuestro técnico. Te contactará en unos minutos. 🔧"
+    en: "I understand. For the best service, I'll pass your case directly to our technician. They'll contact you shortly."
+
+  closing:
+    es: "¡Gracias por tu confianza! iDoctor... ¡recupera tu vida! 📱✨"
+    en: "Thanks for your trust! iDoctor... get your life back! 📱✨"
+
+  follow_up_24h:
+    es: "¡Hola {nombre}! 👋 ¿Decidiste traer tu {equipo}? Recuerda que el diagnóstico es gratis y sin compromiso. ¡Te esperamos!"
+
+  follow_up_48h:
+    es: "¡Hola! Solo checando si pudimos resolver tu duda. Si necesitas algo, aquí estamos. 😊 iDoctor Cancún — 998 213 4708"
+
+  post_repair:
+    es: "¡Hola {nombre}! ¿Todo bien con tu {equipo}? 😊 Si quedaste satisfecho, nos ayudaría mucho una reseñita en Google. ¡Gracias por tu confianza!"

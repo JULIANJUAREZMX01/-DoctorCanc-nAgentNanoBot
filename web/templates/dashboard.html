@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocBot Dashboard — {{ business }}</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: system-ui, sans-serif; background:#0f172a; color:#e2e8f0; padding:2rem; }
+        h1 { color:#38bdf8; margin-bottom:1rem; }
+        .stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; margin:2rem 0; }
+        .card { background:#1e293b; border-radius:12px; padding:1.5rem; border:1px solid #334155; }
+        .card h3 { color:#94a3b8; font-size:.85rem; text-transform:uppercase; margin-bottom:.5rem; }
+        .card .value { font-size:2rem; font-weight:700; color:#38bdf8; }
+        .badge { display:inline-block; padding:.25rem .75rem; border-radius:999px; font-size:.75rem; font-weight:600; }
+        .badge-blue { background:#1e3a5f; color:#38bdf8; }
+        .badge-green { background:#14532d; color:#4ade80; }
+        .badge-orange { background:#431407; color:#fb923c; }
+    </style>
+</head>
+<body>
+    <h1>🩺 DocBot Dashboard</h1>
+    <p>{{ business }} — Agente de Mensajería Inteligente</p>
+    
+    <div class="stats">
+        <div class="card">
+            <h3>Total Leads</h3>
+            <div class="value">{{ stats.get('total_leads', 0) }}</div>
+        </div>
+        <div class="card">
+            <h3>Interacciones (24h)</h3>
+            <div class="value">{{ stats.get('interactions_24h', 0) }}</div>
+        </div>
+        <div class="card">
+            <h3>Estado</h3>
+            <div class="value" style="font-size:1rem">
+                {% for status, count in stats.get('by_status', {}).items() %}
+                <span class="badge badge-blue">{{ status }}: {{ count }}</span>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+    <p style="margin-top:2rem;color:#64748b">
+        iDoctor... ¡recupera tu vida! 📱✨<br>
+        <small>DoctorCancúnAgentNanoBot v0.1.0 — jaja.dev / KynicOS</small>
+    </p>
+</body>
+</html>
